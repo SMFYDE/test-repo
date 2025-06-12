@@ -1,0 +1,55 @@
+{
+    "kbis": "Fichier Kbis",
+    "insee_file": "Fichier INSEE",
+    "cart_or_card": "Contrat de raccordement de l'installation au réseau (CARD ou CART)",
+    "DCC": "Demande complète de contrat",
+    "others": "L'agent n'a pas pu trouver le type du document",
+
+    "company_name": "Nom de la société",
+    "company_siren_number": "Numéro SIREN de la société",
+    "company_siret_number": "Numéro SIRET de la société",
+    "company_address": "Adresse de la société",
+    "company_activity_start_date": "Date de début d'activité de la société",
+
+    "project_name": "Nom du projet",
+
+    "gestion_number": "Numéro de gestion",
+
+    "greffe_name": "Nom du greffe",
+
+    "rcs_immatriculation_number": "Numéro RCS d'immatriculation",
+
+    "cardi_contract_number": "Numéro de contrat cardi",
+
+    "producer_siren_number": "Numéro SIREN du producteur",
+    "producer_address": "Adresse du producteur",
+
+    "installation_name": "Nom de l'installation",
+    "installation_siret_number": "Numéro SIRET de l'installation",
+    "installation_address": "Adresse de l'installation",
+
+    "max_production_capacity_kva": "Capacité maximale de production (kVA)",
+    "max_power_kva": "Puissance maximale (kVA)",
+    "nominal_power_kva": "Puissance nominale (kVA)",
+    "installed_peak_power_kwc": "Puissance crête installée (kWc)",
+    "max_active_power_kw": "Puissance active maximale (kW)",
+
+    "injection_type": "Type d'injection",
+    "injection_power_connection": "Connexion de puissance d'injection",
+
+    "curtailment_device": "Dispositif de limitation",
+
+    "inverters_details": "Détails des onduleurs",
+
+    "count": "Comptage",
+    "quantity": "Quantité",
+    "model": "Modèle",
+
+    "geodetic_point_1": "Point géodésique 1",
+    "geodetic_point_2": "Point géodésique 2",
+    "geodetic_point_3": "Point géodésique 3",
+    "geodetic_point_4": "Point géodésique 4",
+
+    "prime_tuile": "Prime tuile",
+    "q_power": "Puissance réactive"
+}
