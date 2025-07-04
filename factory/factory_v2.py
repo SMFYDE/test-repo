@@ -3,20 +3,16 @@ Factory class for dynamically receiving prompts and generating classes based on 
 """
 
 config = {
-    'kbis': {
-        'question_template': """
+    'kbis': """
             The Kbis is an official document in France that certifies the legal existence of a business or company. It is issued by the clerk of the commercial court and is the company's only official "identity card".
 
             - In this document, what is the gestion number of the document ?
-        """
-    },
-    'insee_file': {
-        'question_template': """
+    """,
+    'insee_file': """
             The INSEE Producer File, also known as the SIRENE register status notice, is a document that provides an 'identity sheet' for each company, association or public body registered in the SIRENE register. This sheet contains information about the SIREN number (unique company identifier).
 
             - what is the SIREN number of the company ?
-        """,
-    }
+    """
 }
 
 
@@ -41,10 +37,8 @@ class PromptRegistry:
         """
         if category not in self.factory_config:
             raise ValueError(f"Category '{category}' not found in factory configuration.")
-        if 'question_template' not in self.factory_config[category]:
-            raise ValueError(f"Question template not found for category '{category}'.")
 
-        return self.factory_config[category]['question_template'].strip()
+        return self.factory_config[category].strip()
 
 
 my_prompt_registry = PromptRegistry()
