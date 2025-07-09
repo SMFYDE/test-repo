@@ -9,7 +9,7 @@ class ExcelEngine():
     def __init__(
         self,
     ) -> None:
-        self.workbook = openpyxl.Workbook("pattern.xlsx")
+        self.workbook = openpyxl.load_workbook("pattern.xlsx")
         self.sheet = self.workbook.active
 
     def edit_one_cell(
@@ -19,6 +19,13 @@ class ExcelEngine():
     ) -> None:
         self.sheet[cell] = value
 
+    def add_value_at_one_cell(
+        self,
+        cell,
+        value
+    ) -> None:
+        self.sheet[cell].value += value
+
     def save(
         self
     ) -> None:
@@ -27,10 +34,7 @@ class ExcelEngine():
 
 
 excel_engine = ExcelEngine()
-excel_engine.edit_one_cell(
-    'A1', 'Hello'
-)
-excel_engine.edit_one_cell(
-    'B1', 'World'
+excel_engine.add_value_at_one_cell(
+    'B8', 'Hello'
 )
 excel_engine.save()
