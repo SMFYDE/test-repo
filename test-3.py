@@ -9,3 +9,4 @@ response = s3.list_buckets()
 print("Liste des buckets S3 :")
 for bucket in response['Buckets']:
     print(f" - {bucket['Name']}")
+
